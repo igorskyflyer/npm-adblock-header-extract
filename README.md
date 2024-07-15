@@ -44,6 +44,45 @@ npm i "@igor.dvlpr/adblock-header-extract"
 
 ## 🤹🏼 API
 
+```ts
+function extractHeaderString(
+  filter: string,
+  trimWhitespace: boolean = true
+): string
+```
+
+Extracts the header and metadata from an Adblock filter text.
+
+- `filter` - the string that contains the Adblock filter,
+- `trimWhitespace` - should the whitespace be trimmed or not. Defaults to `true`.
+
+> Returns the extracted header.
+
+---
+
+```ts
+function extractHeaderString(
+  filter: string,
+  trimWhitespace: boolean = true
+): string
+```
+
+Extracts the header and metadata from an Adblock filter file. File is read with the `UTF-8` encoding by default.
+
+- `file` - the path to the filter file,
+- `trimWhitespace` - should the whitespace be trimmed or not. Defaults to `true`.
+
+
+<br>
+
+> [!CAUTION]
+> Will throw an error if the file cannot be found or there is an error in reading it.
+>
+
+<br>
+
+> Returns the extracted header.
+
 ---
 
 ## 📝 Changelog
