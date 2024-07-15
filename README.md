@@ -85,6 +85,83 @@ Extracts the header and metadata from an Adblock filter file. File is read with 
 
 ---
 
+## ✨ Example
+
+<br>
+
+`./example.ts`
+```ts
+import { extractHeaderFromFile, extractHeaderString } from '@igor.dvlpr/adblock-header-extract'
+
+console.log(extractHeaderFromFile('./filter.txt'))
+
+// will print
+
+/*
+[Adblock Plus 2.0]
+!
+!     ___        __   _    __        _      __
+!    /   |  ____/ /  | |  / /____   (_)____/ /
+!   / /| | / __  /   | | / // __ \ / // __  /
+!  / ___ |/ /_/ /    | |/ // /_/ // // /_/ /
+! /_/  |_|\____/     |___/ \____//_/ \____/
+!
+!
+! {@!}
+! Title: AdVoid.Full
+! Description: Blocks major ad-servers, trackers, malware, fake download links, cookie-consent banners, popups, modals, push notifications, survey, newsletter and subscribe popups, sharing, Google Chromecast, popup chats, post widgets, like widgets, comments, service workers, news widgets, JavaScript and CSS maps, PWA install banners, Webmanifests, SWF objects
+! Version: 3.0.3340
+! Last modified: 2024-07-15T02:07:07.895+02:00
+! Expires: 24 hours (update frequency)
+! Homepage: https://github.com/the-advoid/ad-void
+! Entries: 6615
+! Author: Igor Dimitrijević (@igorskyflyer)
+! GitHub issues: https://github.com/the-advoid/ad-void/issues
+! GitHub pull requests: https://github.com/the-advoid/ad-void/pulls
+! License: https://github.com/the-advoid/ad-void/blob/main/LICENSE
+! Maintained by: Aria, igorskyflyer and all of the contributors
+! See the CONTRIBUTORS.md (https://github.com/the-advoid/ad-void/blob/main/CONTRIBUTORS.md) file for more information
+! Source: World Wide Web
+*/
+```
+
+<br>
+
+`./filter.txt`
+```adblock
+[Adblock Plus 2.0]
+!
+!     ___        __   _    __        _      __
+!    /   |  ____/ /  | |  / /____   (_)____/ /
+!   / /| | / __  /   | | / // __ \ / // __  /
+!  / ___ |/ /_/ /    | |/ // /_/ // // /_/ /
+! /_/  |_|\____/     |___/ \____//_/ \____/
+!
+!
+! {@!}
+! Title: AdVoid.Full
+! Description: Blocks major ad-servers, trackers, malware, fake download links, cookie-consent banners, popups, modals, push notifications, survey, newsletter and subscribe popups, sharing, Google Chromecast, popup chats, post widgets, like widgets, comments, service workers, news widgets, JavaScript and CSS maps, PWA install banners, Webmanifests, SWF objects
+! Version: 3.0.3340
+! Last modified: 2024-07-15T02:07:07.895+02:00
+! Expires: 24 hours (update frequency)
+! Homepage: https://github.com/the-advoid/ad-void
+! Entries: 6615
+! Author: Igor Dimitrijević (@igorskyflyer)
+! GitHub issues: https://github.com/the-advoid/ad-void/issues
+! GitHub pull requests: https://github.com/the-advoid/ad-void/pulls
+! License: https://github.com/the-advoid/ad-void/blob/main/LICENSE
+! Maintained by: Aria, igorskyflyer and all of the contributors
+! See the CONTRIBUTORS.md (https://github.com/the-advoid/ad-void/blob/main/CONTRIBUTORS.md) file for more information
+! Source: World Wide Web
+
+! {@0} Domains (global)
+||02cscosgbuzl.top^
+||05e11c9f6f.com^
+||0af2a962b0102942d9a7df351b20be55.com^
+```
+
+---
+
 ## 📝 Changelog
 
 > ✨ Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/CHANGELOG.md).
