@@ -2,7 +2,7 @@
 
 import { existsSync, readFileSync } from 'node:fs'
 
-const headerPattern: RegExp = /^(?:\[.*\]\n*)?(?:!.*\n?)+/im
+const headerPattern: RegExp = /^(?:\[.*\]\r?\n*)?(?:!.*\r?\n?)+/im
 
 /**
  * Extracts the header and metadata from an Adblock filter text.
