@@ -1,9 +1,9 @@
-<h1 align="center">$project</h1>
+<h1 align="center">Adblock header extract</h1>
 
 <br>
 
 <p align="center">
-	$desc
+	✂️ An npm module that provides ways to extract header and metadata from an Adblock filter file. 📃
 </p>
 
 <br>
@@ -37,7 +37,7 @@
 Install it by executing:
 
 ```shell
-npm i "@igor.dvlpr/$pkg"
+npm i "@igor.dvlpr/adblock-header-extract"
 ```
 
 <br>
@@ -48,37 +48,47 @@ npm i "@igor.dvlpr/$pkg"
 
 ## 📝 Changelog
 
-> ✨ Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/$repo/blob/main/CHANGELOG.md).
+> ✨ Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/CHANGELOG.md).
 
 ---
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/$repo/blob/main/LICENSE).
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/LICENSE).
 
 ---
 
 ## 🧬 Related
 
-[]()
+[@igor.dvlpr/aria](https://www.npmjs.com/package/@igor.dvlpr/aria)
 
-> __
+> _🧬 Meet Aria, an efficient Adblock filter list compiler, with many features that make your maintenance of Adblock filter lists a breeze! 🦖_
 
-[]()
+<br>
 
-> __
+[@igor.dvlpr/strip-headings](https://www.npmjs.com/package/@igor.dvlpr/strip-headings)
 
-[]()
+> _⛸ Strips Markdown headings!🏹_
 
-> __
+<br>
 
-[]()
+[@igor.dvlpr/adblock-filter-counter](https://www.npmjs.com/package/@igor.dvlpr/adblock-filter-counter)
 
-> __
+> _🐲  A dead simple npm module that counts Adblock filter rules.🦘_
 
-[]()
+<br>
 
-> __
+[@igor.dvlpr/jmap](https://www.npmjs.com/package/@igor.dvlpr/jmap)
+
+> _🕶️ Reads a JSON file into a Map. 🌻_
+
+<br>
+
+[@igor.dvlpr/strip-html-headings](https://www.npmjs.com/package/@igor.dvlpr/strip-html-headings)
+
+> _🍛 Strips HTML headings! 🍤_
+
+<br>
 
 ---
 
