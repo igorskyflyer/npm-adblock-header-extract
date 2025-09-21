@@ -49,13 +49,13 @@ export function extractHeaderFromFile(
   trimWhitespace: boolean = true
 ): string {
   if (!existsSync(file)) {
-    throw "Couldn't find the filter file."
+    throw new Error("Couldn't find the filter file.")
   }
 
   try {
     const filter: string = readFileSync(file, 'utf-8')
     return extractHeaderString(filter, trimWhitespace)
   } catch {
-    throw "Couldn't read the filter file."
+    throw new Error("Couldn't read the filter file.")
   }
 }
