@@ -5,8 +5,8 @@ import { existsSync, readFileSync } from 'node:fs'
 const headerPattern: RegExp = /^(?:\[.*\]\r?\n*)?(?:!.*\r?\n?)+/im
 
 /**
- * Extracts the header and metadata from an Adblock filter text.
- * @param filter The string that contains the Adblock filter.
+ * Extracts the header and metadata from an ad-block filter text.
+ * @param filter The string that contains the ad-block filter.
  * @param trimWhitespace Should the whitespace be trimmed or not. Defaults to `true`.
  * @returns The extracted header.
  * @since v1.0.0
@@ -36,8 +36,7 @@ export function extractHeaderString(
 }
 
 /**
- *
- * Extracts the header and metadata from an Adblock filter file. File is read with the UTF-8 encoding by default.
+ * Extracts the header and metadata from an ad-block filter file. File is read with the UTF-8 encoding by default.
  * @param file The path to the filter file.
  * @param trimWhitespace Should the whitespace be trimmed or not. Defaults to `true`.
  * @throws Will throw an error if the file cannot be found or there is an error in reading it.
