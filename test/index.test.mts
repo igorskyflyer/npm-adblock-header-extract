@@ -6,7 +6,7 @@ import { extractHeaderFromFile, extractHeaderString } from '../src/index.mjs'
 
 const advoid: string = readFileSync('./test/data/result/header.txt', 'utf-8')
 
-describe('🧪 Adblock header extract tests 🧪', () => {
+describe('🧪 adblock header extract tests 🧪', () => {
   suite('extractHeaderString()', () => {
     test('#1 should return an empty string', () => {
       // @ts-expect-error
