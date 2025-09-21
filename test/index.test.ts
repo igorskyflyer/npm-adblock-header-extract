@@ -46,7 +46,7 @@ describe('🧪 adblock header extract tests 🧪', () => {
         false
       )
 
-      assert.equal(result, `${advoid}\r\n`)
+      assert.equal(result, `${advoid}\n`)
     }) // #6
   })
 })
