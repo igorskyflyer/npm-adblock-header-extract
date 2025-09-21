@@ -1,45 +1,57 @@
-<h1 align="center">Adblock header extract</h1>
-
-<br>
-
-<p align="center">
-	✂️ An npm module that provides ways to extract header and metadata from an Adblock filter file. 📃
-</p>
-
-<br>
-<br>
-
 <div align="center">
-	<blockquote>
-		<br>
-		<h4>💖 Support further development</h4>
-		<span>I work hard for every project, including this one and your support means a lot to me!
-		<br>
-		Consider buying me a coffee. ☕
-		<br>
-		<strong>Thank you for supporting my efforts! 🙏😊</strong></span>
-		<br>
-		<br>
-		<a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
-		<br>
-		<br>
-		<a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
-		<br>
-		<br>
-		<br>
-	</blockquote>
+  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-adblock-header-extract/main/media/adblock-header-extract.png" alt="Ad-block Header Extract – Node.js/TypeScript utility icon for parsing ad-block filter list headers and metadata" width="256" height="256">
+  <h1>Ad-block Header Extract</h1>
 </div>
 
+<blockquote align="center">Fast Parsing • Clean Metadata • Node.js Utility • Ad-block Filters</blockquote>
+
+<h4 align="center">
+  ✂️ Parse and extract ad-block filter list headers with ease. Works on strings or files, trims whitespace, and returns clean metadata for tooling and automation. 📃
+</h4>
+
+<br>
+
+## 📃 Table of Contents
+
+- [**Features**](#-features)
+- [**Usage**](#-usage)
+- [**API**](#-api)
+- [**Examples**](#️-examples)
+- [**Changelog**](#-changelog)
+- [**Support**](#-support)
+- [**License**](#-license)
+- [**Related**](#-related)
+- [**Author**](#-author)
+
+<br>
+
+## 🤖 Features
+
+- ✅ Extracts ad-block filter headers quickly  
+- 📂 Reads filter files with UTF-8 support  
+- ⚡ Returns clean header strings reliably  
+- 🛡️ Handles invalid input safely
+
+<br>
 <br>
 
 ## 🕵🏼 Usage
 
-Install it by executing:
+Install it by executing any of the following, depending on your preferred package manager:
 
-```shell
-npm i "@igor.dvlpr/adblock-header-extract"
+```bash
+pnpm add @igorskyflyer/adblock-header-extract
 ```
 
+```bash
+yarn add @igorskyflyer/adblock-header-extract
+```
+
+```bash
+npm i @igorskyflyer/adblock-header-extract
+```
+
+<br>
 <br>
 
 ## 🤹🏼 API
@@ -54,9 +66,9 @@ function extractHeaderString(
 Extracts the header and metadata from an Adblock filter text.
 
 - `filter` - the string that contains the Adblock filter,
-- `trimWhitespace` - should the whitespace be trimmed or not. Defaults to `true`.
+- `trimWhitespace` - should the whitespace be trimmed or not. Defaults to `true`.  
 
-> Returns the extracted header.
+Returns the extracted header.
 
 ---
 
@@ -72,24 +84,18 @@ Extracts the header and metadata from an Adblock filter file. File is read with 
 - `file` - the path to the filter file,
 - `trimWhitespace` - should the whitespace be trimmed or not. Defaults to `true`.
 
-
 <br>
 
-> [!CAUTION]
-> Will throw an error if the file cannot be found or there is an error in reading it.
->
+Throws an error if the file cannot be found or there is an error in reading it.
+
+Returns the extracted header.
 
 <br>
-
-> Returns the extracted header.
-
----
-
-## ✨ Example
-
 <br>
 
-`./example.ts`
+## 🗒️ Examples
+
+`example.ts`
 ```ts
 import { extractHeaderFromFile, extractHeaderString } from '@igor.dvlpr/adblock-header-extract'
 
@@ -160,54 +166,73 @@ console.log(extractHeaderFromFile('./filter.txt'))
 ||0af2a962b0102942d9a7df351b20be55.com^
 ```
 
----
+<br>
+<br>
 
 ## 📝 Changelog
 
-> ✨ Changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/CHANGELOG.md).
+📑 Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/CHANGELOG.md).
 
----
+<br>
+<br>
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/LICENSE).
+Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/LICENSE).
 
----
+<br>
+<br>
+
+## 💖 Support
+
+<div align="center">
+  I work hard for every project, including this one and your support means a lot to me!
+  <br>
+  Consider buying me a coffee. ☕
+  <br>
+  <br>
+  <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
+  <br>
+  <br>
+  <em>Thank you for supporting my efforts!</em> 🙏😊
+</div>
+
+<br>
+<br>
 
 ## 🧬 Related
 
-[@igor.dvlpr/aria](https://www.npmjs.com/package/@igor.dvlpr/aria)
+[**@igorskyflyer/normalized-string**](https://www.npmjs.com/package/@igorskyflyer/normalized-string)
 
-> _🧬 Meet Aria, an efficient Adblock filter list compiler, with many features that make your maintenance of Adblock filter lists a breeze! 🦖_
-
-<br>
-
-[@igor.dvlpr/strip-headings](https://www.npmjs.com/package/@igor.dvlpr/strip-headings)
-
-> _⛸ Strips Markdown headings!🏹_
+> _💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮_
 
 <br>
 
-[@igor.dvlpr/adblock-filter-counter](https://www.npmjs.com/package/@igor.dvlpr/adblock-filter-counter)
+[**@igorskyflyer/zep**](https://www.npmjs.com/package/@igorskyflyer/zep)
 
-> _🐲  A dead simple npm module that counts Adblock filter rules.🦘_
-
-<br>
-
-[@igor.dvlpr/jmap](https://www.npmjs.com/package/@igor.dvlpr/jmap)
-
-> _🕶️ Reads a JSON file into a Map. 🌻_
+> _🧠 Zep is a zero-dependency, efficient debounce module. ⏰_
 
 <br>
 
-[@igor.dvlpr/strip-html-headings](https://www.npmjs.com/package/@igor.dvlpr/strip-html-headings)
+[**@igorskyflyer/mapped-replacer**](https://www.npmjs.com/package/@igorskyflyer/mapped-replacer)
 
-> _🍛 Strips HTML headings! 🍤_
-
-<br>
-
----
+> _🦗 Zero-dependency Map and RegExp based string replacer with Unicode support. 🍁_
 
 <br>
 
-Provided by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
+[**@igorskyflyer/strip-yaml-front-matter**](https://www.npmjs.com/package/@igorskyflyer/strip-yaml-front-matter)
+
+> _🦓 Strips YAML front matter from a String or a file. 👾_
+
+<br>
+
+[**@igorskyflyer/strip-html**](https://www.npmjs.com/package/@igorskyflyer/strip-html)
+
+> _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
+
+<br>
+<br>
+<br>
+
+## 👨🏻‍💻 Author
+Created by **Igor Dimitrijević ([*@igorskyflyer*](https://github.com/igorskyflyer/))**.
