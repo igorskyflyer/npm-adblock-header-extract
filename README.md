@@ -97,7 +97,7 @@ Returns the extracted header.
 
 `example.ts`
 ```ts
-import { extractHeaderFromFile, extractHeaderString } from '@igor.dvlpr/adblock-header-extract'
+import { extractHeaderFromFile, extractHeaderString } from '@igorskyflyer/adblock-header-extract'
 
 console.log(extractHeaderFromFile('./filter.txt'))
 
