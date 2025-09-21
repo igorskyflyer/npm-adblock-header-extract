@@ -1,6 +1,6 @@
-# 🫱🏼‍🫲🏼 Contributing to {{project}}
+# 🫱🏼‍🫲🏼 Contributing to Ad-block Header Extract
 
-Thank you for considering a contribution to {{project}}! Whether you're fixing bugs, suggesting improvements, writing docs, or sharing ideas – your input helps the project grow and evolve.
+Thank you for considering a contribution to Ad-block Header Extract! Whether you're fixing bugs, suggesting improvements, writing docs, or sharing ideas – your input helps the project grow and evolve.
 
 ---
 
@@ -52,7 +52,7 @@ Contributions to documentation, examples, and config files are always appreciate
 
 ## 💖 Thank You!
 
-Your contribution helps maintain and improve {{project}} — thank you for helping make it better!  
+Your contribution helps maintain and improve Ad-block Header Extract — thank you for helping make it better!  
 Check out [`SUPPORT.md`](https://github.com/igorskyflyer/npm-adblock-header-extract/blob/main/SUPPORT.md) if you need help or want to sponsor its development.
 
 <br>
