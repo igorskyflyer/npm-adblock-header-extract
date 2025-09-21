@@ -1,46 +1,62 @@
 {
-  "name": "@igor.dvlpr/adblock-header-extract",
-  "version": "1.0.0",
-  "description": "✂️ An npm module that provides ways to extract header and metadata from an Adblock filter file. 📃",
-  "sideEffects": false,
-  "engines": {
-    "node": ">=20.0"
-  },
-  "types": "./dist/index.d.mts",
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "files": ["dist"],
-  "scripts": {
-    "build": "tsc",
-    "test": "vitest --run",
-    "debug": "vitest",
-    "pub": "npm test && npm run build && npm publish --access public"
-  },
-  "keywords": [
-    "adblock",
-    "header",
-    "extract",
-    "meta",
-    "data",
-    "metadata",
-    "igorskyflyer",
-    "igor.dvlpr"
-  ],
-  "license": "MIT",
-  "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-  "funding": "https://ko-fi.com/igorskyflyer",
-  "homepage": "https://github.com/igorskyflyer/npm-adblock-header-extract",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/igorskyflyer/npm-adblock-header-extract.git"
-  },
-  "bugs": {
-    "url": "https://github.com/igorskyflyer/npm-adblock-header-extract/issues"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "@types/node": "^20.14.10",
-    "typescript": "^5.5.3",
-    "vitest": "^2.0.3"
-  }
+    "name": "@igorskyflyer/adblock-header-extract",
+    "version": "1.1.0",
+    "description": "✂️ Parse and extract ad-block filter list headers with ease. Works on strings or files, trims whitespace, and returns clean metadata for tooling and automation. 📃",
+    "sideEffects": false,
+    "engines": {
+        "node": ">=22.0"
+    },
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest --run",
+        "pub": "pnpm test && git push origin main --tags"
+    },
+    "keywords": [
+        "adblock automation",
+        "adblock filter",
+        "adblock header",
+        "adblock metadata",
+        "adblock parser",
+        "adblock tools",
+        "adblock",
+        "filter list parser",
+        "filter list",
+        "header extractor",
+        "igor dimitrijević",
+        "igorskyflyer",
+        "metadata parser",
+        "nodejs utility",
+        "parse filter list",
+        "regex",
+        "typescript"
+    ],
+    "license": "MIT",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
+    "funding": "https://ko-fi.com/igorskyflyer",
+    "homepage": "https://github.com/igorskyflyer/npm-adblock-header-extract",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/igorskyflyer/npm-adblock-header-extract.git"
+    },
+    "bugs": {
+        "url": "https://github.com/igorskyflyer/npm-adblock-header-extract/issues"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.4",
+        "@igorskyflyer/biome-config": "^2.1.0",
+        "@types/node": "^22.18.5",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.17.0"
 }
